@@ -8,11 +8,11 @@ from rest_framework.response import Response
 from rest_framework import generics
 # Create your views here.
 
-class user_list(generics.ListAPIView):
+class userViewSet(viewsets.ModelViewSet):
   queryset = UserInfo.objects.all()
   serializer_class = UserInfoSerializer
 
 
-class user_detail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = UserInfo.objects.all()
-    serializer_class = UserInfoSerializer
+#class user_detail(generics.RetrieveUpdateDestroyAPIView):
+#    queryset = UserInfo.objects.all()
+#    serializer_class = UserInfoSerializer
