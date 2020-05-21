@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import UserInfo
 
-class UserInfoSerializer(serializers.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserInfo
-        fields = ['userId', 'password', 'birth', 'gender']
+        fields = '__all__'

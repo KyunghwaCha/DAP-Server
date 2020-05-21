@@ -45,7 +45,7 @@ REST_FRAMEWORK = {
     # USE DJANGO's standard `django.contrib.auth` permissions,
     # ar allow read-onl access for unauthebticated users.
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+        #'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
 
